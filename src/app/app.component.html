@@ -1,0 +1,15 @@
+<tui-root>
+    <p>
+        Here you can reproduce any Taiga UI example
+    </p>
+    <form [formGroup]="form" tuiTextfieldSize="s">
+        <div class="tui-form__row">
+            <tui-multi-select formControlName="foo">
+                <tui-data-list-wrapper *tuiDataList [items]="types"></tui-data-list-wrapper>
+            </tui-multi-select>
+        </div>
+        <div class="tui-form__row">
+            <tui-input-tag formControlName="bar"></tui-input-tag>
+        </div>
+    </form>
+</tui-root>
